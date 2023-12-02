@@ -1,0 +1,4 @@
+PROGRAM
+ sumTotal = (sum / 47 ) + total
+ Total = (sum+ 407 ) / 123
+END
