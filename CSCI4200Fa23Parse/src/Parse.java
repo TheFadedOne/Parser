@@ -1,8 +1,8 @@
 /*
- * Christopher Davidson
+ * Andrew Blackwell
  * Dr. Salimi
  * CSCI 4200
- * Spring 2023
+ * Fall 2023
  * Lexical Analyzer
  */
 
