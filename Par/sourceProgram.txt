@@ -6,4 +6,5 @@ C = age - 15 * (D / 8);
 print(C+Area);
 if (C) then C = 99;
 if (count) then average = total/count
+
 END

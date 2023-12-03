@@ -219,7 +219,7 @@ public class Parse {
             lex();
             expr();
             //if(lexeme[--lexLen] != nextChar)
-            	//lex();
+            	lex();
          }
          else {
             System.out.println("**ERROR** - left-parenthesis\n");
@@ -306,6 +306,10 @@ public class Parse {
     		}
     				
     		if(nextToken == Token.THEN_KEYWORD){//checks to see if the then keyword has been found (processed)
+    			lex();//grabs the next token in the statement 
+    	    	statement();
+    	    }
+    		if(nextToken == Token.ELSE_KEYWORD){//checks to see if the then keyword has been found (processed)
     			lex();//grabs the next token in the statement 
     	    	statement();
     	    }
@@ -416,7 +420,6 @@ public class Parse {
 			}
 		}
 		spacedOutString = spacedOutString.replaceAll("\\s+", " ");
-		System.out.println("BETTER LINE: " + spacedOutString);
 		return spacedOutString;
 	}
 
@@ -471,6 +474,9 @@ public class Parse {
 		}
 		else if (lexeme.matches("then")) {
 			nextToken = Token.THEN_KEYWORD;
+		}
+		else if (lexeme.matches("else")) {
+			nextToken = Token.ELSE_KEYWORD;
 		}
 		//The IDENT Token is at the end, so we can check for if, then, end, print, program and read keywords first
 		else if (lexeme.matches("[a-zA-Z]+")) {

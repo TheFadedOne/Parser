@@ -7,7 +7,8 @@ total = 205;
 C = age - 15 * (D / 8);
 print(C+Area);
 if (C) then C = 99;
-if (count) then average = total/count
+if (count) then average = total/count else print(count)
+
 END
 ********************
 Enter <program>
@@ -91,65 +92,78 @@ Exit <expr>
 Exit <output>
 Exit <statement>
 
+Enter <statement>
+Enter <selection>
+Enter <expr>
+Enter <term>
+Enter <factor>
+Enter <expr>
+Enter <term>
+Enter <factor>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Enter <statement>
+Enter <assign>
+Enter <expr>
+Enter <term>
+Enter <factor>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+Exit <statement>
+
+**Error** - missing then keyword
+Exit <selection>
+Exit <statement>
+
+Enter <statement>
+Enter <selection>
+Enter <expr>
+Enter <term>
+Enter <factor>
+Enter <expr>
+Enter <term>
+Enter <factor>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Enter <statement>
+Enter <assign>
+Enter <expr>
+Enter <term>
+Enter <factor>
+Exit <factor>
+Enter <factor>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+Exit <statement>
+
+Enter <statement>
+Enter <output>
+Enter <expr>
+Enter <term>
+Enter <factor>
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <output>
+Exit <statement>
+
+Exit <selection>
+Exit <statement>
+
 **Error** - missing semicolon
-Enter <statement>
-Enter <selection>
-Enter <expr>
-Enter <term>
-Enter <factor>
-Enter <expr>
-Enter <term>
-Enter <factor>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Enter <statement>
-Enter <assign>
-Enter <expr>
-Enter <term>
-Enter <factor>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Exit <assign>
-Exit <statement>
-
-Exit <selection>
-Exit <statement>
-
-Enter <statement>
-Enter <selection>
-Enter <expr>
-Enter <term>
-Enter <factor>
-Enter <expr>
-Enter <term>
-Enter <factor>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Enter <statement>
-Enter <assign>
-Enter <expr>
-Enter <term>
-Enter <factor>
-Exit <factor>
-Enter <factor>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Exit <assign>
-Exit <statement>
-
-Exit <selection>
-Exit <statement>
-
+**ERROR** - expected identifier or PRINT_KEYWORD
 Exit <program>
 Parsing of the program is complete!
 ********************************************************************************

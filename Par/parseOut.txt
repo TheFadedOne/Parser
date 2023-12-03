@@ -8,6 +8,7 @@ C = age - 15 * (D / 8);
 print(C+Area);
 if (C) then C = 99;
 if (count) then average = total/count
+
 END
 ********************
 Next token is: PROGRAM_KEYWORD
@@ -206,6 +207,7 @@ Exit <statement>
 Exit <selection>
 Exit <statement>
 
+**Error** - missing semicolon
 Next token is: END_KEYWORD 
 Exit <program>
 Parsing of the program is complete!
