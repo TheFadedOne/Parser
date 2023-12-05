@@ -490,7 +490,10 @@ public class Parse {
 	
 	
 	/*
-	 * 
+	 * NEW lex function. 
+	 * Gets the lexeme at the current index and matches it to a token. 
+	 * Sets nextToken accordingly
+	 * Increments current lexeme index
 	 */
 	private static void lex() {
 		if (currLexListIndex < lexemeList.length) {
