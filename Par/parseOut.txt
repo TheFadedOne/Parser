@@ -1,43 +1,45 @@
 Christopher Davidson, CSCI4200, Spring 2023, Parser
 ********************************************************************************
 PROGRAM
-read(count);
-total = 205;
- Area = (length+width) * 20
-C = age - 15 * (D / 8);
-print(C+Area);
-if (C) then C = 99;
-if (count) then average = total/count
-
+ sumTotal = (sum / 47 ) + total
+ Total = (sum+ 407 ) / 123
 END
 ********************
 Next token is: PROGRAM_KEYWORD
 Enter <program>
-Next token is: READ_KEYWORD
-Enter <statement>
-Enter <input>
-Next token is: LEFT_PAREN  
-Next token is: IDENT       
-Next token is: RIGHT_PAREN 
-Next token is: SEMICOLON   
-Exit <input>
-Exit <statement>
-
 Next token is: IDENT       
 Enter <statement>
 Enter <assign>
 Next token is: ASSIGN_OP   
-Next token is: INT_LIT     
+Next token is: LEFT_PAREN  
 Enter <expr>
 Enter <term>
 Enter <factor>
-Next token is: SEMICOLON   
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: DIV_OP      
+Exit <factor>
+Next token is: INT_LIT     
+Enter <factor>
+Next token is: RIGHT_PAREN 
+Exit <factor>
+Exit <term>
+Exit <expr>
+Next token is: ADD_OP      
+Exit <factor>
+Exit <term>
+Next token is: IDENT       
+Enter <term>
+Enter <factor>
 Exit <factor>
 Exit <term>
 Exit <expr>
 Exit <assign>
 Exit <statement>
 
+**Error** - missing semicolon
 Next token is: IDENT       
 Enter <statement>
 Enter <assign>
@@ -53,161 +55,23 @@ Enter <factor>
 Next token is: ADD_OP      
 Exit <factor>
 Exit <term>
-Next token is: IDENT       
+Next token is: INT_LIT     
 Enter <term>
 Enter <factor>
 Next token is: RIGHT_PAREN 
 Exit <factor>
 Exit <term>
 Exit <expr>
-Next token is: MULT_OP     
-Exit <factor>
-Next token is: INT_LIT     
-Enter <factor>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Exit <assign>
-Exit <statement>
-
-**Error** - missing semicolon
-Next token is: IDENT       
-Enter <statement>
-Enter <assign>
-Next token is: ASSIGN_OP   
-Next token is: IDENT       
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: SUB_OP      
-Exit <factor>
-Exit <term>
-Next token is: INT_LIT     
-Enter <term>
-Enter <factor>
-Next token is: MULT_OP     
-Exit <factor>
-Next token is: LEFT_PAREN  
-Enter <factor>
-Next token is: IDENT       
-Enter <expr>
-Enter <term>
-Enter <factor>
 Next token is: DIV_OP      
 Exit <factor>
 Next token is: INT_LIT     
 Enter <factor>
-Next token is: RIGHT_PAREN 
-Exit <factor>
-Exit <term>
-Exit <expr>
-Next token is: SEMICOLON   
 Exit <factor>
 Exit <term>
 Exit <expr>
 Exit <assign>
 Exit <statement>
 
-Next token is: PRINT_KEYWORD
-Enter <statement>
-Enter <output>
-Next token is: LEFT_PAREN  
-Next token is: IDENT       
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: ADD_OP      
-Exit <factor>
-Exit <term>
-Next token is: IDENT       
-Enter <term>
-Enter <factor>
-Next token is: RIGHT_PAREN 
-Exit <factor>
-Exit <term>
-Exit <expr>
-Next token is: SEMICOLON   
-Exit <output>
-Exit <statement>
-
-Next token is: IF_KEYWORD  
-Enter <statement>
-Enter <selection>
-Next token is: LEFT_PAREN  
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: IDENT       
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: RIGHT_PAREN 
-Exit <factor>
-Exit <term>
-Exit <expr>
-Next token is: THEN_KEYWORD
-Exit <factor>
-Exit <term>
-Exit <expr>
-Next token is: IDENT       
-Enter <statement>
-Enter <assign>
-Next token is: ASSIGN_OP   
-Next token is: INT_LIT     
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: SEMICOLON   
-Exit <factor>
-Exit <term>
-Exit <expr>
-Exit <assign>
-Exit <statement>
-
-Exit <selection>
-Exit <statement>
-
-Next token is: IF_KEYWORD  
-Enter <statement>
-Enter <selection>
-Next token is: LEFT_PAREN  
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: IDENT       
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: RIGHT_PAREN 
-Exit <factor>
-Exit <term>
-Exit <expr>
-Next token is: THEN_KEYWORD
-Exit <factor>
-Exit <term>
-Exit <expr>
-Next token is: IDENT       
-Enter <statement>
-Enter <assign>
-Next token is: ASSIGN_OP   
-Next token is: IDENT       
-Enter <expr>
-Enter <term>
-Enter <factor>
-Next token is: DIV_OP      
-Exit <factor>
-Next token is: IDENT       
-Enter <factor>
-Exit <factor>
-Exit <term>
-Exit <expr>
-Exit <assign>
-Exit <statement>
-
-Exit <selection>
-Exit <statement>
-
-**Error** - missing semicolon
 Next token is: END_KEYWORD 
 Exit <program>
 Parsing of the program is complete!

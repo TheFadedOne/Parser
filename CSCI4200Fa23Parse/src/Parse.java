@@ -309,7 +309,7 @@ public class Parse {
     			lex();//grabs the next token in the statement 
     	    	statement();
     	    }
-    		if(nextToken == Token.ELSE_KEYWORD){//checks to see if the then keyword has been found (processed)
+    		if(nextToken == Token.ELSE_KEYWORD){//checks to see if the else keyword has been found (processed)
     			lex();//grabs the next token in the statement 
     	    	statement();
     	    }

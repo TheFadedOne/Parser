@@ -1,10 +1,4 @@
 PROGRAM
-read(count);
-total = 205;
- Area = (length+width) * 20
-C = age - 15 * (D / 8);
-print(C+Area);
-if (C) then C = 99;
-if (count) then average = total/count
-
+ sumTotal = (sum / 47 ) + total
+ Total = (sum+ 407 ) / 123
 END
